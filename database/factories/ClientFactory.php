@@ -3,7 +3,6 @@
 namespace Denniseilander\PassportScopeRestriction\Database\Factories;
 
 use Denniseilander\PassportScopeRestriction\Models\Client;
-use Illuminate\Support\Str;
 use Laravel\Passport\Database\Factories\ClientFactory as PassportClientFactory;
 
 class ClientFactory extends PassportClientFactory
@@ -22,15 +21,8 @@ class ClientFactory extends PassportClientFactory
      */
     public function definition(): array
     {
-        return [
-            'user_id' => null,
-            'name' => $this->faker->company,
-            'secret' => Str::random(40),
-            config('passport-scopes.allowed_scopes_column') => ["*"],
-            'redirect' => $this->faker->url,
-            'personal_access_client' => false,
-            'password_client' => false,
-            'revoked' => false,
-        ];
+        return array_merge(parent::definition(), [
+            config('passport-scopes.allowed_scopes_column') => ['*'],
+        ]);
     }
 }

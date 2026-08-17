@@ -8,12 +8,11 @@ use Denniseilander\PassportScopeRestriction\Database\Factories\TokenFactory;
 use Denniseilander\PassportScopeRestriction\Models\Token;
 use Denniseilander\PassportScopeRestriction\Tests\Feature\PassportTestCase;
 use Illuminate\Database\Eloquent\Factories\Sequence;
+use PHPUnit\Framework\Attributes\Test;
 
 class SyncClientScopesCommandTest extends PassportTestCase
 {
-    /**
-     * @test
-     */
+    #[Test]
     public function it_synchronizes_access_token_scopes_with_allowed_scopes(): void
     {
         $clients = ClientFactory::new()
@@ -50,9 +49,7 @@ class SyncClientScopesCommandTest extends PassportTestCase
         ]);
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function it_keeps_existing_scopes_when_synchronizing_access_token_scopes_with_allowed_scopes(): void
     {
         $client = ClientFactory::new()
