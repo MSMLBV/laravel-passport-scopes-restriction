@@ -1,11 +1,11 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction;
+namespace MSML\PassportScopeRestriction;
 
-use Denniseilander\PassportScopeRestriction\Commands\SyncClientScopesCommand;
-use Denniseilander\PassportScopeRestriction\Models\Client;
-use Denniseilander\PassportScopeRestriction\Models\Token;
-use Denniseilander\PassportScopeRestriction\Observers\TokenObserver;
+use MSML\PassportScopeRestriction\Commands\SyncClientScopesCommand;
+use MSML\PassportScopeRestriction\Models\Client;
+use MSML\PassportScopeRestriction\Models\Token;
+use MSML\PassportScopeRestriction\Observers\TokenObserver;
 use Laravel\Passport\Passport;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

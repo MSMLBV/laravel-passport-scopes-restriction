@@ -1,9 +1,9 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction\Database\Factories;
+namespace MSML\PassportScopeRestriction\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Denniseilander\PassportScopeRestriction\Models\Token;
+use MSML\PassportScopeRestriction\Models\Token;
 
 class TokenFactory extends Factory
 {

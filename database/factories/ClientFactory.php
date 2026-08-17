@@ -1,8 +1,8 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction\Database\Factories;
+namespace MSML\PassportScopeRestriction\Database\Factories;
 
-use Denniseilander\PassportScopeRestriction\Models\Client;
+use MSML\PassportScopeRestriction\Models\Client;
 use Laravel\Passport\Database\Factories\ClientFactory as PassportClientFactory;
 
 class ClientFactory extends PassportClientFactory

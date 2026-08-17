@@ -1,13 +1,13 @@
 {
-    "name": "denniseilander/laravel-passport-scopes-restriction",
+    "name": "msml/laravel-passport-scopes-restriction",
     "description": "Restrict scopes for different Laravel Passport clients.",
     "keywords": [
-        "denniseilander",
+        "msml",
         "laravel",
         "laravel-passport",
         "laravel-passport-scopes-restriction"
     ],
-    "homepage": "https://github.com/denniseilander/laravel-passport-client-scopes",
+    "homepage": "https://github.com/MSMLBV/laravel-passport-scopes-restriction",
     "license": "MIT",
     "authors": [
         {
@@ -32,13 +32,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Denniseilander\\PassportScopeRestriction\\": "src",
-            "Denniseilander\\PassportScopeRestriction\\Database\\Factories\\": "database/factories"
+            "MSML\\PassportScopeRestriction\\": "src",
+            "MSML\\PassportScopeRestriction\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Denniseilander\\PassportScopeRestriction\\Tests\\": "tests"
+            "MSML\\PassportScopeRestriction\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -57,7 +57,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Denniseilander\\PassportScopeRestriction\\PassportClientServiceProvider"
+                "MSML\\PassportScopeRestriction\\PassportClientServiceProvider"
             ]
         }
     },

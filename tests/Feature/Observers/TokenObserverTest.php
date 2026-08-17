@@ -1,8 +1,8 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction\Tests\Feature\Observers;
+namespace MSML\PassportScopeRestriction\Tests\Feature\Observers;
 
-use Denniseilander\PassportScopeRestriction\Tests\Feature\PassportTestCase;
+use MSML\PassportScopeRestriction\Tests\Feature\PassportTestCase;
 use Illuminate\Support\Facades\Config;
 use Laravel\Passport\Client;
 use Laravel\Passport\Database\Factories\ClientFactory;

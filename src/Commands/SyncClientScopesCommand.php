@@ -1,9 +1,9 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction\Commands;
+namespace MSML\PassportScopeRestriction\Commands;
 
-use Denniseilander\PassportScopeRestriction\Models\Client;
-use Denniseilander\PassportScopeRestriction\Models\Token;
+use MSML\PassportScopeRestriction\Models\Client;
+use MSML\PassportScopeRestriction\Models\Token;
 use Illuminate\Console\Command;
 use Laravel\Passport\Passport;
 

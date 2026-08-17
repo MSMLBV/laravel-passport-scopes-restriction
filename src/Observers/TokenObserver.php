@@ -1,8 +1,8 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction\Observers;
+namespace MSML\PassportScopeRestriction\Observers;
 
-use Denniseilander\PassportScopeRestriction\Models\Token;
+use MSML\PassportScopeRestriction\Models\Token;
 
 class TokenObserver
 {

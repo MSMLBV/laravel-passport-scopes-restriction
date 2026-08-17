@@ -1,8 +1,8 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction\Tests;
+namespace MSML\PassportScopeRestriction\Tests;
 
-use Denniseilander\PassportScopeRestriction\PassportClientServiceProvider;
+use MSML\PassportScopeRestriction\PassportClientServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
