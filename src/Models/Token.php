@@ -1,6 +1,6 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction\Models;
+namespace MSML\PassportScopeRestriction\Models;
 
 use Laravel\Passport\Token as PassportToken;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction\Tests\Feature;
+namespace MSML\PassportScopeRestriction\Tests\Feature;
 
-use Denniseilander\PassportScopeRestriction\PassportClientServiceProvider;
+use MSML\PassportScopeRestriction\PassportClientServiceProvider;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
 use Laravel\Passport\Passport;

@@ -1,2 +1,2 @@
 providers:
-  - Denniseilander\PassportScopeRestriction\PassportClientServiceProvider
+  - MSML\PassportScopeRestriction\PassportClientServiceProvider

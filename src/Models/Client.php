@@ -1,6 +1,6 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction\Models;
+namespace MSML\PassportScopeRestriction\Models;
 
 use Illuminate\Database\Eloquent\Collection;
 use Laravel\Passport\Client as PassportClient;

@@ -1,19 +1,18 @@
 <?php
 
-namespace Denniseilander\PassportScopeRestriction\Tests\Feature\Commands;
+namespace MSML\PassportScopeRestriction\Tests\Feature\Commands;
 
-use Denniseilander\PassportScopeRestriction\Commands\SyncClientScopesCommand;
-use Denniseilander\PassportScopeRestriction\Database\Factories\ClientFactory;
-use Denniseilander\PassportScopeRestriction\Database\Factories\TokenFactory;
-use Denniseilander\PassportScopeRestriction\Models\Token;
-use Denniseilander\PassportScopeRestriction\Tests\Feature\PassportTestCase;
+use MSML\PassportScopeRestriction\Commands\SyncClientScopesCommand;
+use MSML\PassportScopeRestriction\Database\Factories\ClientFactory;
+use MSML\PassportScopeRestriction\Database\Factories\TokenFactory;
+use MSML\PassportScopeRestriction\Models\Token;
+use MSML\PassportScopeRestriction\Tests\Feature\PassportTestCase;
 use Illuminate\Database\Eloquent\Factories\Sequence;
+use PHPUnit\Framework\Attributes\Test;
 
 class SyncClientScopesCommandTest extends PassportTestCase
 {
-    /**
-     * @test
-     */
+    #[Test]
     public function it_synchronizes_access_token_scopes_with_allowed_scopes(): void
     {
         $clients = ClientFactory::new()
@@ -50,9 +49,7 @@ class SyncClientScopesCommandTest extends PassportTestCase
         ]);
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function it_keeps_existing_scopes_when_synchronizing_access_token_scopes_with_allowed_scopes(): void
     {
         $client = ClientFactory::new()
